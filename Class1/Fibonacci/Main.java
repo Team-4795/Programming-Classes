@@ -3,15 +3,12 @@ import java.util.Scanner;
 class Main {
 
   public static int fib(int num) {
-    int num1 = 0;
-    int num2 = 1;
-    for(int i = 0; i < num; i++) {
-      int sum = num1 + num2;
-      num1 = num2;
-      num2 = sum;
-    }
 
-    return num2;
+    int sum = 0;
+    
+    // Insert code to calculate fibonacci here
+ 
+    return sum;
   }
 
   public static void main(String[] args) {
@@ -19,6 +16,7 @@ class Main {
     while(true) {
       System.out.print("Input number: ");
       int input = scanner.nextInt();
+      // Insert logic here to quit on negative input
       System.out.println(fib(input));
     }
   }
